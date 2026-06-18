@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 관리 앱 - 기말고사 실습</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📅 이벤트 관리 앱</h1>
+            <p class="student-info">학번: 20240001 / 이름: 홍길동</p>
+        </header>
+
+        <main>
+            <!-- ========================================================
+                 [1단계 문제] HTML 폼 구조 작성 (15점)
+                 ========================================================
+
+                 작성해야 할 내용:
+                 1. form 태그: id="eventForm"
+                 2. 제목 입력창: id="title", type="text", placeholder="예: 팀 프로젝트 발표"
+                    - label: "이벤트 제목 <span class='required'>*</span>"
+                    - <div class="form-group">으로 감쌈
+                 3. 날짜 입력창: id="date", type="date"
+                    - label: "날짜 <span class='required'>*</span>"
+                    - <div class="form-group">으로 감쌈
+                 4. 설명 입력창: id="description", textarea, rows="3"
+                    - label: "설명"
+                    - <div class="form-group">으로 감쌈
+                 5. 등록 버튼: type="submit", class="btn-primary"
+                    - 텍스트: "➕ 이벤트 등록"
+
+                 💡 완성 테스트: 브라우저에서 폼과 입력창들이 올바르게 표시되는지 확인
+                 💡 배점: 총 15점 (요소당 3점씩)
+            ======================================================== -->
+            <section class="form-section">
+                <h2>새 이벤트 등록</h2>
+
+                <!-- [1단계 학생 작성 영역] 아래에 폼을 작성하세요 -->
+
+
+            </section>
+
+            <!-- 에러 메시지 표시 영역 (JavaScript로 표시/숨김 제어) -->
+            <div class="error-message" id="errorMessage"></div>
+
+            <section class="events-section">
+                <h2>등록된 이벤트</h2>
+
+                <!-- 이벤트 목록 영역 (JavaScript로 카드 추가됨) -->
+                <div id="eventsList" class="events-list">
+                    <p class="empty-message">등록된 이벤트가 없습니다.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>💡 팁: 제목과 날짜는 필수 입력 항목입니다.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
